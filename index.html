@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sentiment Analysis Visualizations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+  <script src="https://unpkg.com/d3-force@3"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <h1>Sentiment Analysis Visualizations</h1>
+
+  <div class="plot-row">
+    <div class="plot-col full-width">
+      <h2>Timeline Slider with Snapshot Glyphs</h2>
+      <div id="timeline" class="timeline-chart"></div>
+    </div>
+  </div>
+
+  <div class="plot-row">
+    <div class="plot-col">
+      <h2>Sankey-like Flow</h2>
+      <svg id="sankey" width="600" height="500"></svg>
+    </div>
+    <div class="plot-col">
+      <h2>Beeswarm Plot: Tweets Over Time by Company</h2>
+      <svg id="beeswarm" width="600" height="500"></svg>
+    </div>
+  </div>
+
+
+  <script src="timeline.js"></script>
+  <script src="beeswarm.js"></script>
+  <script src="sankey.js"></script>
+</body>
+</html>
